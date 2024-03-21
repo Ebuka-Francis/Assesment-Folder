@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="fig1" />
+      <div class="calculation-center" >
+       <div class="border-for-solution"><Button id="menu-button">Solution</Button></div>
+        <menu id="menu">
+            <div class="dropdown-menu">
+                <button value="+" id="addition">Addition</button>
+                <button value="-" id="subtract">Subtraction</button>
+                <button value="*" id="multi">Multiplication</button>
+                <button value="/" id="divi">Division</button>
+            </div>
+        </menu>
+      </div>
+      <input type="text" id="fig2">
+    </div>
+    <div class="solutions">
+
+      <button class="solution-method" id="methods">Solution</button>
+      <div class="answer" id="ans"></div>
+    </div>
+
+    <!-- <button id="divButton">divition</button>
+    <p id="diviButton">0</p>
+    <button id="mulButton">multiplication</button>
+    <p id="multiButton"></p>
+    <button id="subButton">subtraction</button>
+    <p id="subtraButton"></p>
+    <button id="addButton">addition</button>
+    <p id="addiButton"></p> -->
+    <script src="main.js"></script>
+    <script>
+      function divitionalCal(alpha, omega) {
+        return alpha / omega;
+      }
+      document.getElementById("divButton").addEventListener("click", () => {
+        let result = divitionalCal(4, 2);
+
+        document.getElementById("diviButton").innerHTML = result;
+      });
+
+      function multiplicationCal(alpha, omega) {
+        return alpha * omega;
+      }
+      document.getElementById("mulButton").addEventListener("click", () => {
+        let result = multiplicationCal(5, 5);
+
+        document.getElementById("multiButton").innerHTML = result;
+      });
+
+      function subtractionCal(alpha, omega) {
+        return alpha - omega;
+      }
+      document.getElementById("subButton").addEventListener("click", () => {
+        let result = subtractionCal(10, 9);
+
+        document.getElementById("subtraButton").innerHTML = result;
+      });
+
+      function additionalCal(alpha, omega) {
+        return alpha + omega;
+      }
+      document.getElementById("addButton").addEventListener("click", () => {
+        let result = additionalCal(20, 20);
+
+        document.getElementById("addiButton").innerHTML = result;
+      });
+    </script>
+  </body>
+</html>
