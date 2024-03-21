@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+
+    <script>
+        const demo = document.getElementsByTagName('div')[0];
+        const header = document.createElement('div');
+        header.innerHTML = 'Header';
+        header.setAttribute('style', 'height:70px; width:100vw; background-color:red; color:blue; font-size:30px; text-align:center;');
+        demo.appendChild(header);
+
+        const sideBar = document.createElement('div');
+        sideBar.innerHTML = 'Sidebar';
+        sideBar.setAttribute('style','height:10em; width:50%; background-color:red; color:blue; font-size:30px; text-align:center;');
+        demo.appendChild(sideBar);
+        
+        const content = document.createElement('div');
+        content.innerHTML = 'Content';
+        content.setAttribute('style', 'position:relative; left:50%; top:-300px; height:10em; width:52%; background-color:blue; color:red; font-size:30px; text-align:center;')
+        demo.appendChild(content);
+
+        const main = document.createElement('div');
+        main.innerHTML = 'footer';
+        main.setAttribute('style', ' position:relative; top:-300px; height:70px; width:100vw; background-color:red; color:blue; font-size:30px; text-align:center;')
+        demo.appendChild(main);
+
+    </script>
+</body>
+</html>

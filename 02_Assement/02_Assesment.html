@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 88vh;
+      background-color: #f3f3f3;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      height: 50vh;
+      font-size: 70px;
+      text-transform: capitalize;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 1px 1px 40px 10px #333;
+      width: 50%;
+      background-color: #f5f5f5;
+    }
+  </style>
+  <body>
+    <div class="center">
+      <p id="demo"></p>
+      <p id="message" style="font-size: 40px;" ></p>
+    </div>
+
+
+    <script>
+      let value = "value";
+      let message = '';
+      const dat = new Date();
+      let hour = dat.getHours();
+
+
+      // if (hour < 12) {
+      //   value = "Good morning";
+      // } else if (hour < 16) {
+      //   value = "Good afternoon";
+      // } else if (hour < 23) {
+      //   value = "Good evening";
+      // }
+
+      switch (true) {
+        case (hour < 12):
+          value = "Good morining";
+          message = " Rise and Shine ";
+          break;
+        case (hour < 16):
+          value = "Good Afternoon";
+          message = "Lets keep the hustling spirit high";
+          break;
+        case (hour < 21):
+          value = "Good Evening";
+          message = "A Good time to rest(Timeless!!!)";
+          break;
+          default: 
+          value = "Good Night";
+          message = "Timeless";
+          break;
+        }
+
+        let data = (document.getElementById("demo").innerHTML = value);
+        console.log("The hour of " + value);
+        document.getElementById("message").innerHTML = message;
+            </script>
+    
+    
+    <!-- <script>
+      let value = "value";
+      let timeNow = new Date().getHours();
+      
+      const greeting = timeNow;
+      console.log(timeNow)
+      switch(greeting){
+        case timeNow >= 1 && timeNow < 11
+        : cosole.log("good morning");
+        break;
+      }
+    </script> -->
+  </body>
+</html>

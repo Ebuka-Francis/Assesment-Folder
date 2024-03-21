@@ -11,7 +11,7 @@ html {
   
   td, th {
     border: 1px solid rgb(190,190,190);
-    /* padding: 20px 20px; */
+    padding: 20px 20px;
   }
   
   th {
@@ -22,13 +22,13 @@ html {
     text-align: center;
   }
   
-  td :nth-child(even)  {
+  tr :nth-child(even) td {
     background: rgb(235,235,235);
   }
   
-  /* tr :nth-child(odd)  {
-    background-color: #000;
-  } */ 
+  tr :nth-child(odd) td {
+    background-color: #fff;
+  } 
   li {
     list-style: none;
     width: 100%;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h2 id="formResult"></h2>
+        <button id="goBack"> <i class="fa-solid fa-arrow-left"></i> Go back</button>
+    </div>
+    <form action="" id="myForm" method="post">
+        <div>
+            <h2>Sign up</h2>
+        </div>
+        <div class="dove">
+            <label for="firstname">Firstname:</label><br>
+            <input type="text" id="firstName">
+        </div>
+        <div class="dove">
+            <label for="lastname">Lastname:</label><br>
+            <input type="text" id="lastName">
+        </div>
+        <div class="last-card">
+            <select id="cars" name="cars" size="1" >
+                <option value="gender">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female"> Female</option>
+              <option value="others">Others</option>
+                </select>
+                <input type="submit" value="Login" id="submit" class="submit">
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
